@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Topnotchers International Academy — Raising Excellent Leaders</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Nunito+Sans:wght@300;400;600;700;800;900&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- ========= NAVBAR ========= -->
+<header class="site-header" id="siteHeader">
+  <nav class="navbar">
+    <a href="#home" class="nav-logo">
+      <div class="logo-crest">
+        <img src="logo.png">
+      </div>
+      <div class="logo-text-block">
+        <span class="logo-name">Topnotchers</span>
+        <span class="logo-tagline">International Academy</span>
+      </div>
+    </a>
+
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="#home" class="nav-item active" onclick="closeMenu()">Home</a></li>
+      <li><a href="#about" class="nav-item" onclick="closeMenu()">About</a></li>
+      <li><a href="#academics" class="nav-item" onclick="closeMenu()">Academics</a></li>
+      <li><a href="#gallery" class="nav-item" onclick="closeMenu()">Campus Life</a></li>
+      <li><a href="#admissions" class="nav-item" onclick="closeMenu()">Admissions</a></li>
+      <li><a href="#contact" class="nav-item" onclick="closeMenu()">Contact</a></li>
+    </ul>
+
+    <div class="nav-right">
+      <a href="#" class="nav-apply-btn" onclick="openPage('pg-admissions');return false;">Apply Now</a>
+      <button class="burger" id="burger" aria-label="Menu" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+</header>
+<div class="nav-backdrop" id="navBackdrop" onclick="closeMenu()"></div>
+
+<!-- ========= HERO ========= -->
+<section class="hero" id="home">
+  <div class="hero-bg">
+    <div class="hbg-blob b1"></div>
+    <div class="hbg-blob b2"></div>
+    <div class="hbg-grid"></div>
+  </div>
+  <div class="hero-inner">
+    <div class="hero-left">
+      <div class="hero-badge">
+        <span class="badge-crown">♛</span>
+        <span>Admissions Open — 2024/2025 Session</span>
+      </div>
+      <h1 class="hero-h1">
+        Raising<br>
+        Academically<br>
+        <em>Excellent</em><br>
+        &amp; Godly Leaders
+      </h1>
+      <p class="hero-sub">A leading Christian school offering a blend of Nigerian and British curriculum — nurturing the whole child for a global future.</p>
+      <div class="hero-btns">
+        <a class="btn-gold" href="#" onclick="openPage('pg-admissions');return false;">Apply for Admission</a>
+        <a class="btn-ghost-white" href="#" onclick="openPage('pg-contact');return false;">Book a School Tour</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hs-item"><strong class="hs-num" data-count="98" data-suffix="%">0%</strong><span>WAEC Pass Rate</span></div>
+        <div class="hs-sep"></div>
+        <div class="hs-item"><strong class="hs-num" data-count="500" data-suffix="+">0+</strong><span>Students</span></div>
+        <div class="hs-sep"></div>
+        <div class="hs-item"><strong class="hs-num" data-count="40" data-suffix="+">0+</strong><span>Teachers</span></div>
+        <div class="hs-sep"></div>
+        <div class="hs-item"><strong class="hs-num" data-count="13" data-suffix="+">0+</strong><span>Years</span></div>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="hero-logo-wrap">
+        <img src="about.jpg" alt="Topnotchers International Academy" class="hero-logo-img"/>
+        <div class="hlw-glow"></div>
+        <div class="hlw-ring r1"></div>
+        <div class="hlw-ring r2"></div>
+      </div>
+      <div class="hero-float-card hfc1">
+        <span>🏆</span>
+        <div><strong>Best School 2023</strong><span>Abia State Award</span></div>
+      </div>
+      <div class="hero-float-card hfc2">
+        <span>✝</span>
+        <div><strong>Faith-Centred</strong><span>Christ our foundation</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-scroll-cue">
+    <div class="hsc-line"></div>
+    <span>Scroll to explore</span>
+  </div>
+</section>
+
+<!-- ========= TICKER STRIP ========= -->
+<div class="ticker-wrap">
+  <div class="ticker-track">
+    <span>✝ Christian Values</span><span class="tdot">♛</span>
+    <span>🎓 Cambridge Curriculum</span><span class="tdot">♛</span>
+    <span>🏆 98% WAEC Pass Rate</span><span class="tdot">♛</span>
+    <span>🌍 British–Nigerian Standards</span><span class="tdot">♛</span>
+    <span>📚 Montessori Early Years</span><span class="tdot">♛</span>
+    <span>⚽ Sports &amp; Arts Excellence</span><span class="tdot">♛</span>
+    <span>✝ Christian Values</span><span class="tdot">♛</span>
+    <span>🎓 Cambridge Curriculum</span><span class="tdot">♛</span>
+    <span>🏆 98% WAEC Pass Rate</span><span class="tdot">♛</span>
+    <span>🌍 British–Nigerian Standards</span><span class="tdot">♛</span>
+    <span>📚 Montessori Early Years</span><span class="tdot">♛</span>
+    <span>⚽ Sports &amp; Arts Excellence</span><span class="tdot">♛</span>
+  </div>
+</div>
+
+<!-- ========= WHY CHOOSE US ========= -->
+<section class="section bg-white" id="why">
+  <div class="container">
+    <div class="sec-head centered">
+      <p class="eyebrow">Why Topnotchers</p>
+      <h2 class="sec-title">Built on Excellence &amp; Faith</h2>
+      <p class="sec-sub">Every aspect of our school is deliberately designed to produce leaders who excel academically and walk with God.</p>
+    </div>
+    <div class="carousel-outer" id="co-why">
+      <button class="c-prev csbtn" data-carousel="co-why">&#8249;</button>
+      <div class="carousel-window">
+        <div class="carousel-belt">
+          <div class="why-card">
+            <div class="wc-ico-wrap"><span>🏆</span></div>
+            <h3>98% WAEC Pass Rate</h3>
+            <p>Our students consistently rank among the top performers in Abia State examinations year after year without fail.</p>
+          </div>
+          <div class="why-card">
+            <div class="wc-ico-wrap"><span>👨‍🏫</span></div>
+            <h3>40+ Expert Teachers</h3>
+            <p>Our faculty holds degrees from leading Nigerian and international universities with proven classroom excellence.</p>
+          </div>
+          <div class="why-card">
+            <div class="wc-ico-wrap"><span>🏛️</span></div>
+            <h3>World-Class Facilities</h3>
+            <p>ICT labs, science laboratories, sports complex, and air-conditioned classrooms create the ideal learning environment.</p>
+          </div>
+          <div class="why-card">
+            <div class="wc-ico-wrap"><span>✝</span></div>
+            <h3>Christian Foundation</h3>
+            <p>Our faith-based values of integrity, discipline, and excellence are woven into every aspect of daily school life.</p>
+          </div>
+          <div class="why-card">
+            <div class="wc-ico-wrap"><span>🌍</span></div>
+            <h3>Dual Curriculum</h3>
+            <p>We combine Nigerian national curriculum with Cambridge International — preparing truly global citizens from childhood.</p>
+          </div>
+          <div class="why-card">
+            <div class="wc-ico-wrap"><span>🎓</span></div>
+            <h3>100% University Entry</h3>
+            <p>Every graduating student gains admission into their chosen university — both locally and internationally each year.</p>
+          </div>
+        </div>
+      </div>
+      <button class="c-next csbtn" data-carousel="co-why">&#8250;</button>
+    </div>
+    <div class="carousel-dots-row" id="cdr-co-why"></div>
+  </div>
+</section>
+
+<!-- ========= ABOUT ========= -->
+<section class="section bg-cream" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-visual">
+        <div class="av-main-img">
+          <img src="about.jpg" alt="Topnotchers Academy School Building" loading="lazy"/>
+        </div>
+        <div class="av-badge">
+          <strong>13+</strong>
+          <span>Years of<br>Excellence</span>
+        </div>
+        <div class="av-small-img">
+          <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=400&q=80&fit=crop" alt="Students learning in classroom" loading="lazy"/>
+        </div>
+      </div>
+      <div class="about-copy">
+        <p class="eyebrow">Our Story</p>
+        <h2 class="sec-title left">A School Built<br>to Last Generations</h2>
+        <p class="about-lead">Founded with one powerful conviction: every child deserves world-class education rooted in godly character.</p>
+        <p class="about-body">Since 2010, we have created a nurturing environment where academic excellence meets moral formation. Our dual-curriculum approach equips students to thrive in Nigeria and on the global stage — from Abia to London.</p>
+        <div class="about-pillars">
+          <div class="ap"><span>✝</span><strong>Faith-Centred</strong></div>
+          <div class="ap"><span>📐</span><strong>Disciplined</strong></div>
+          <div class="ap"><span>⭐</span><strong>Excellent</strong></div>
+          <div class="ap"><span>🤝</span><strong>Community</strong></div>
+        </div>
+        <a class="btn-crimson" href="#" onclick="openPage('pg-about');return false;">Discover Our Story</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========= MANAGEMENT TEAM ========= -->
+<section class="section bg-cream" id="management">
+  <div class="container">
+
+    <div class="sec-head centered">
+      <p class="eyebrow">Leadership & Vision</p>
+      <h2 class="sec-title">Meet Our Management Team</h2>
+      <p class="sec-sub">The dedicated leaders shaping the Topnotchers experience — committed to excellence, faith, and every child's future.</p>
+    </div>
+
+    <!-- PROPRIETOR SPOTLIGHT -->
+    <div class="proprietor-block">
+      <div class="pb-image-col">
+        <div class="pb-img-wrap">
+          <img src="director.jpg" alt="Rev. P. K. Emeaba — Director, Topnotchers International Academy" loading="lazy"/>
+          <div class="pb-img-badge">
+            <span class="pb-badge-icon">✝</span>
+            <span>Founder &amp; Director</span>
+          </div>
+        </div>
+      </div>
+      <div class="pb-text-col">
+        <p class="eyebrow">A Word from the Director</p>
+        <h3 class="pb-name">Rev. P. K. Emeaba</h3>
+        <p class="pb-role">Director, Topnotchers International Academy</p>
+        <div class="pb-divider"></div>
+        <blockquote class="pb-speech">
+          <span class="pb-open-quote">❝</span>
+          At Topnotchers International Academy, we believe that education is not merely the transfer of knowledge — it is the transformation of a life. Every child who walks through our doors is a gift from God, and it is our sacred responsibility to develop their God-given potential to the fullest.
+          <br><br>
+          We have built this institution on the twin pillars of academic excellence and Christian character, because we know that the world needs leaders who are not only brilliant, but also righteous. Our curriculum, our teachers, and our environment are all intentionally designed to produce that kind of graduate.
+          <br><br>
+          To every parent who has trusted us with your child — thank you. That trust is not taken lightly. We commit to you that Topnotchers will always be a place where your child is seen, valued, and equipped to fulfil their God-ordained destiny.
+        </blockquote>
+        <div class="pb-sig">
+          <div class="pb-sig-line"></div>
+          <span>Rev. P. K. Emeaba</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- MANAGEMENT CAROUSEL -->
+    <div class="mgmt-carousel-label">
+      <p class="eyebrow" style="text-align:center;margin-top:64px;margin-bottom:8px;">Our School Leadership</p>
+      <h3 class="mgmt-sub-title">The Team Behind Daily Excellence</h3>
+    </div>
+
+    <div class="carousel-outer" id="co-mgmt">
+      <button class="c-prev csbtn" data-carousel="co-mgmt">&#8249;</button>
+      <div class="carousel-window">
+        <div class="carousel-belt">
+
+          <div class="mgmt-card">
+            <div class="mgmt-img-wrap">
+              <div class="mgmt-img-ph">
+                <span>👩‍💼</span>
+              </div>
+            </div>
+            <div class="mgmt-body">
+              <h4>Mrs. Margaret Adeyemi</h4>
+              <p class="mgmt-role">Principal</p>
+              <p class="mgmt-bio">B.Ed, PGDE — University of Ibadan. A former WAEC examiner with 18 years of transformative teaching and school leadership experience. Her door is always open.</p>
+            </div>
+          </div>
+
+          <div class="mgmt-card">
+            <div class="mgmt-img-wrap">
+              <div class="mgmt-img-ph">
+                <span>👨‍🏫</span>
+              </div>
+            </div>
+            <div class="mgmt-body">
+              <h4>Mr. David Okafor</h4>
+              <p class="mgmt-role">Head Teacher</p>
+              <p class="mgmt-bio">B.Sc, M.Sc Education Management. Cambridge-trained curriculum specialist passionate about literacy, numeracy, and raising the bar for every student in our care.</p>
+            </div>
+          </div>
+
+          <div class="mgmt-card">
+            <div class="mgmt-img-wrap">
+              <div class="mgmt-img-ph">
+                <span>👩‍💼</span>
+              </div>
+            </div>
+            <div class="mgmt-body">
+              <h4>Miss Sandra Nwofor</h4>
+              <p class="mgmt-role">Registrar</p>
+              <p class="mgmt-bio">B.Sc Administration — University of Nigeria. Manages student records, admissions processing, and academic documentation with precision and warmth.</p>
+            </div>
+          </div>
+
+          <div class="mgmt-card">
+            <div class="mgmt-img-wrap">
+              <div class="mgmt-img-ph">
+                <span>👨‍💼</span>
+              </div>
+            </div>
+            <div class="mgmt-body">
+              <h4>Mr. Chidi Eze</h4>
+              <p class="mgmt-role">School Manager</p>
+              <p class="mgmt-bio">MBA — Lagos Business School. Oversees day-to-day operations, facilities, and strategic development — ensuring the school runs smoothly and efficiently every single day.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <button class="c-next csbtn" data-carousel="co-mgmt">&#8250;</button>
+    </div>
+    <div class="carousel-dots-row" id="cdr-co-mgmt"></div>
+
+  </div>
+</section>
+
+<!-- ========= ACADEMIC PROGRAMMES ========= -->
+<section class="section bg-white" id="academics">
+  <div class="container">
+    <div class="sec-head centered">
+      <p class="eyebrow">Academic Programmes</p>
+      <h2 class="sec-title">Education for Every Stage</h2>
+      <p class="sec-sub">From the earliest years through secondary school — structured, engaging, and world-class education.</p>
+    </div>
+    <div class="carousel-outer" id="co-prog">
+      <button class="c-prev csbtn" data-carousel="co-prog">&#8249;</button>
+      <div class="carousel-window">
+        <div class="carousel-belt">
+          <div class="prog-card">
+            <div class="pcard-head" style="background:linear-gradient(135deg,#7B3F00,#C9A84C);">
+              <span class="pc-big-ico">🌱</span>
+              <div class="pcard-tag">Ages 1 – 5</div>
+            </div>
+            <div class="pcard-body">
+              <h3>Early Years<br><em>(Montessori)</em></h3>
+              <p>Our Montessori-inspired foundation nurtures curiosity, creativity and independence in a safe, stimulating environment where children learn through purposeful play.</p>
+              <ul class="pcard-feats">
+                <li>Play-based exploration</li>
+                <li>Language &amp; numeracy foundations</li>
+                <li>Social-emotional development</li>
+                <li>Creative arts &amp; music</li>
+              </ul>
+              <a class="pcard-cta" href="#" onclick="openPage('pg-academics');return false;">Explore Programme →</a>
+            </div>
+          </div>
+          <div class="prog-card">
+            <div class="pcard-head" style="background:linear-gradient(135deg,#8B0000,#C41230);">
+              <span class="pc-big-ico">📖</span>
+              <div class="pcard-tag">Ages 6 – 11</div>
+            </div>
+            <div class="pcard-body">
+              <h3>Primary<br><em>School</em></h3>
+              <p>Our primary school blends Nigerian national curriculum with Cambridge Primary standards, delivered by dedicated specialist teachers from Primary 3 onwards.</p>
+              <ul class="pcard-feats">
+                <li>Core subjects + STEM focus</li>
+                <li>French &amp; Computer Science</li>
+                <li>Sports &amp; Creative Arts</li>
+                <li>Christian Religious Studies</li>
+              </ul>
+              <a class="pcard-cta" href="#" onclick="openPage('pg-academics');return false;">Explore Programme →</a>
+            </div>
+          </div>
+          <div class="prog-card">
+            <div class="pcard-head" style="background:linear-gradient(135deg,#0D1F3C,#1e4475);">
+              <span class="pc-big-ico">🎓</span>
+              <div class="pcard-tag">Ages 12 – 17</div>
+            </div>
+            <div class="pcard-body">
+              <h3>Secondary<br><em>School</em></h3>
+              <p>Rigorous academic preparation for WAEC, NECO, and Cambridge IGCSE with strong career guidance and leadership development built in from JSS1 through SSS3.</p>
+              <ul class="pcard-feats">
+                <li>WAEC &amp; NECO preparation</li>
+                <li>Cambridge IGCSE pathway</li>
+                <li>Leadership &amp; mentorship</li>
+                <li>University guidance counselling</li>
+              </ul>
+              <a class="pcard-cta" href="#" onclick="openPage('pg-academics');return false;">Explore Programme →</a>
+            </div>
+          </div>
+          <div class="prog-card">
+            <div class="pcard-head" style="background:linear-gradient(135deg,#1a4a1a,#2d7a2d);">
+              <span class="pc-big-ico">⚽</span>
+              <div class="pcard-tag">All Ages</div>
+            </div>
+            <div class="pcard-body">
+              <h3>Co-Curricular<br><em>Activities</em></h3>
+              <p>From sports and music to debate and coding clubs — we develop the full potential of every student well beyond the classroom walls and academic subjects.</p>
+              <ul class="pcard-feats">
+                <li>Sports &amp; athletics</li>
+                <li>Music, dance &amp; drama</li>
+                <li>Coding &amp; robotics club</li>
+                <li>Debate &amp; public speaking</li>
+              </ul>
+              <a class="pcard-cta" href="#" onclick="openPage('pg-academics');return false;">Explore Programme →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="c-next csbtn" data-carousel="co-prog">&#8250;</button>
+    </div>
+    <div class="carousel-dots-row" id="cdr-co-prog"></div>
+  </div>
+</section>
+
+<!-- ========= CAMPUS LIFE GALLERY ========= -->
+<section class="section bg-crimson" id="gallery">
+  <div class="container">
+    <div class="sec-head centered">
+      <p class="eyebrow onred">Life at Topnotchers</p>
+      <h2 class="sec-title white">A Thriving School Community</h2>
+      <p class="sec-sub light">Where learning meets joy, friendship, and faith.</p>
+    </div>
+    <div class="carousel-outer" id="co-gal">
+      <button class="c-prev csbtn ghost-btn" data-carousel="co-gal">&#8249;</button>
+      <div class="carousel-window">
+        <div class="carousel-belt">
+          <div class="gal-card">
+            <img src="https://images.unsplash.com/photo-1571260899304-425eee4c7efc?w=700&q=80&fit=crop" alt="ICT Laboratory" loading="lazy" class="gal-img"/>
+            <div class="gal-caption">ICT Laboratory</div>
+          </div>
+          <div class="gal-card">
+            <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=700&q=80&fit=crop" alt="Sports and Athletics" loading="lazy" class="gal-img"/>
+            <div class="gal-caption">Sports &amp; Athletics</div>
+          </div>
+          <div class="gal-card">
+            <img src="https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?w=700&q=80&fit=crop" alt="Music and Arts" loading="lazy" class="gal-img"/>
+            <div class="gal-caption">Music &amp; Arts</div>
+          </div>
+          <div class="gal-card">
+            <img src="https://images.unsplash.com/photo-1532094349884-543559373537?w=700&q=80&fit=crop" alt="Science Laboratory" loading="lazy" class="gal-img"/>
+            <div class="gal-caption">Science Laboratory</div>
+          </div>
+          <div class="gal-card">
+            <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=700&q=80&fit=crop" alt="Library and Reading Centre" loading="lazy" class="gal-img"/>
+            <div class="gal-caption">Library &amp; Resource Centre</div>
+          </div>
+          <div class="gal-card">
+            <img src="https://images.unsplash.com/photo-1544717305-2782549b5136?w=700&q=80&fit=crop" alt="Morning Assembly" loading="lazy" class="gal-img"/>
+            <div class="gal-caption">Morning Assembly &amp; Devotion</div>
+          </div>
+        </div>
+      </div>
+      <button class="c-next csbtn ghost-btn" data-carousel="co-gal">&#8250;</button>
+    </div>
+    <div class="carousel-dots-row onred" id="cdr-co-gal"></div>
+  </div>
+</section>
+
+<!-- ========= TESTIMONIALS ========= -->
+<section class="section bg-cream" id="testimonials">
+  <div class="container">
+    <div class="sec-head centered">
+      <p class="eyebrow">Parent &amp; Student Voices</p>
+      <h2 class="sec-title">What Our Community Says</h2>
+    </div>
+    <div class="carousel-outer" id="co-test">
+      <button class="c-prev csbtn" data-carousel="co-test">&#8249;</button>
+      <div class="carousel-window">
+        <div class="carousel-belt">
+          <div class="tcard">
+            <div class="tcard-top"><div class="tcard-stars">★★★★★</div><div class="tcard-qmark">❝</div></div>
+            <p class="tcard-quote">Enrolling my daughter at Topnotchers was the best decision I've made as a parent. The teachers genuinely care, the discipline is firm but loving, and her results have been absolutely outstanding every term.</p>
+            <div class="tcard-author"><div class="tcard-av">AO</div><div><strong>Mrs. Adaeze Okonkwo</strong><span>Parent · JSS2 Student</span></div></div>
+          </div>
+          <div class="tcard">
+            <div class="tcard-top"><div class="tcard-stars">★★★★★</div><div class="tcard-qmark">❝</div></div>
+            <p class="tcard-quote">Topnotchers gave me far more than academic knowledge. The leadership training, morning devotions, and teachers' mentorship shaped who I am today. I'm now studying Engineering at the University of Abia.</p>
+            <div class="tcard-author"><div class="tcard-av">EI</div><div><strong>Emmanuel Idowu</strong><span>Alumni · Class of 2022</span></div></div>
+          </div>
+          <div class="tcard">
+            <div class="tcard-top"><div class="tcard-stars">★★★★★</div><div class="tcard-qmark">❝</div></div>
+            <p class="tcard-quote">The blend of Nigerian and British curriculum is exceptional. My son is confident, well-spoken, and consistently outperforms his peers in every academic activity. I'm an incredibly proud parent.</p>
+            <div class="tcard-author"><div class="tcard-av">BL</div><div><strong>Mr. Babatunde Lawal</strong><span>Parent · SSS1 Student</span></div></div>
+          </div>
+          <div class="tcard">
+            <div class="tcard-top"><div class="tcard-stars">★★★★★</div><div class="tcard-qmark">❝</div></div>
+            <p class="tcard-quote">I was so shy at my former school. Topnotchers nurtured my confidence through debate clubs and leadership opportunities. I won the state essay competition last year — I never thought that was possible for me!</p>
+            <div class="tcard-author"><div class="tcard-av">FC</div><div><strong>Favour Chibueze</strong><span>Student · SSS2</span></div></div>
+          </div>
+          <div class="tcard">
+            <div class="tcard-top"><div class="tcard-stars">★★★★★</div><div class="tcard-qmark">❝</div></div>
+            <p class="tcard-quote">The Christian values here go far beyond church activities — they are integrated into daily school life. My children are becoming people of genuine integrity and that means everything to me as a parent.</p>
+            <div class="tcard-author"><div class="tcard-av">GE</div><div><strong>Mrs. Grace Eze</strong><span>Parent · Primary 5</span></div></div>
+          </div>
+        </div>
+      </div>
+      <button class="c-next csbtn" data-carousel="co-test">&#8250;</button>
+    </div>
+    <div class="carousel-dots-row" id="cdr-co-test"></div>
+  </div>
+</section>
+
+<!-- ========= ACHIEVEMENTS ========= -->
+<section class="section bg-white" id="achievements">
+  <div class="container">
+    <div class="sec-head centered">
+      <p class="eyebrow">Results &amp; Achievements</p>
+      <h2 class="sec-title">A Record of Excellence</h2>
+    </div>
+    <div class="carousel-outer" id="co-ach">
+      <button class="c-prev csbtn" data-carousel="co-ach">&#8249;</button>
+      <div class="carousel-window">
+        <div class="carousel-belt">
+          <div class="ach-card">
+            <div class="ach-top"><span class="ach-year">2023</span><span class="ach-medal">🥇</span></div>
+            <h3>State Best School Award</h3>
+            <p>Recognized by Abia State Ministry of Education as one of the top 10 private schools for academic performance and holistic student development.</p>
+            <div class="ach-progress"><div class="ach-bar" style="width:98%"></div></div>
+            <span class="ach-label">Performance Score: 98 / 100</span>
+          </div>
+          <div class="ach-card">
+            <div class="ach-top"><span class="ach-year">2023</span><span class="ach-medal">📊</span></div>
+            <h3>98% WAEC Pass Rate</h3>
+            <p>Class of 2023 achieved a 98% overall pass rate with 90% scoring 5 credits including English Language and Mathematics — a historic result.</p>
+            <div class="ach-progress"><div class="ach-bar" style="width:98%"></div></div>
+            <span class="ach-label">Exam Score: 98% Pass Rate</span>
+          </div>
+          <div class="ach-card">
+            <div class="ach-top"><span class="ach-year">2022</span><span class="ach-medal">🏅</span></div>
+            <h3>National Science Olympiad</h3>
+            <p>Three students advanced to the national finals — earning 1 silver and 1 bronze medal in Physics and Chemistry respectively, a first for our school.</p>
+            <div class="ach-progress"><div class="ach-bar" style="width:85%"></div></div>
+            <span class="ach-label">National Top 5 Finalists</span>
+          </div>
+          <div class="ach-card">
+            <div class="ach-top"><span class="ach-year">2022</span><span class="ach-medal">📝</span></div>
+            <h3>State Essay Champions</h3>
+            <p>First place in the Abia State inter-school essay competition — our 3rd consecutive year winning this prestigious and highly competitive award.</p>
+            <div class="ach-progress"><div class="ach-bar" style="width:100%"></div></div>
+            <span class="ach-label">3× Consecutive Champions</span>
+          </div>
+          <div class="ach-card">
+            <div class="ach-top"><span class="ach-year">2021</span><span class="ach-medal">⚽</span></div>
+            <h3>LASIS Football Champions</h3>
+            <p>Our boys football team clinched the Abia State Inter-Secondary Schools championship for the second consecutive year running.</p>
+            <div class="ach-progress"><div class="ach-bar" style="width:90%"></div></div>
+            <span class="ach-label">2× State Champions</span>
+          </div>
+        </div>
+      </div>
+      <button class="c-next csbtn" data-carousel="co-ach">&#8250;</button>
+    </div>
+    <div class="carousel-dots-row" id="cdr-co-ach"></div>
+  </div>
+</section>
+
+<!-- ========= STRONG CTA ========= -->
+<section class="cta-section">
+  <div class="cta-deco">
+    <div class="cta-deco-circle c1"></div>
+    <div class="cta-deco-circle c2"></div>
+    <div class="cta-crown-deco">♛</div>
+  </div>
+  <div class="cta-content">
+    <p class="eyebrow onred">✝ Begin the Journey</p>
+    <h2 class="cta-h2">Give Your Child<br><em>the Best Start in Life</em></h2>
+    <p class="cta-desc">Admission is now open for the 2024/2025 academic session.<br>Limited spaces — apply early to secure your child's place.</p>
+    <div class="cta-btns">
+      <a class="btn-gold large" href="#" onclick="openPage('pg-admissions');return false;">Apply Now</a>
+      <a class="btn-ghost-white large" href="#" onclick="openPage('pg-contact');return false;">Schedule a Visit</a>
+    </div>
+    <div class="cta-trust-row">
+      <span>✓ Free Entrance Assessment</span>
+      <span>✓ Flexible Payment Plans</span>
+      <span>✓ 24-Hour Response</span>
+    </div>
+  </div>
+</section>
+
+<!-- ========= FOOTER ========= -->
+<footer class="footer">
+  <div class="footer-grid">
+    <div class="fg-brand">
+      <div class="fg-logo">
+        <svg viewBox="0 0 44 52" fill="none" xmlns="http://www.w3.org/2000/svg" width="36" height="44">
+          <path d="M22 2L42 10V28C42 38 33 46 22 50C11 46 2 38 2 28V10L22 2Z" fill="#C41230" stroke="#F5C518" stroke-width="2.5"/>
+          <text x="22" y="33" text-anchor="middle" fill="white" font-family="sans-serif" font-weight="900" font-size="14" letter-spacing="-1">TN</text>
+          <polygon points="22,6 26,13 18,13" fill="#F5C518"/>
+        </svg>
+        <div class="logo-text-block">
+          <span class="logo-name">Topnotchers</span>
+          <span class="logo-tagline">International Academy</span>
+        </div>
+      </div>
+      <p class="fg-desc">Raising academically excellent and godly leaders since 2010. A leading Christian school in Abia, Nigeria.</p>
+      <div class="fg-socials">
+        <a href="#" class="fsoc">f</a>
+        <a href="#" class="fsoc">ig</a>
+        <a href="#" class="fsoc">tw</a>
+        <a href="#" class="fsoc">yt</a>
+        <a href="#" class="fsoc">in</a>
+      </div>
+    </div>
+    <div class="fg-col">
+      <h4>Quick Links</h4>
+      <ul><li><a href="#home">Home</a></li><li><a href="#" onclick="openPage('pg-about');return false;">About Us</a></li><li><a href="#" onclick="openPage('pg-academics');return false;">Academics</a></li><li><a href="#" onclick="openPage('pg-facilities');return false;">Facilities</a></li><li><a href="#" onclick="openPage('pg-admissions');return false;">Admissions</a></li><li><a href="#" onclick="openPage('pg-contact');return false;">Contact</a></li></ul>
+    </div>
+    <div class="fg-col">
+      <h4>Programmes</h4>
+      <ul><li><a href="#">Early Years (Montessori)</a></li><li><a href="#">Primary School</a></li><li><a href="#">Junior Secondary</a></li><li><a href="#">Senior Secondary</a></li><li><a href="#">Cambridge IGCSE</a></li><li><a href="#">Co-Curricular</a></li></ul>
+    </div>
+    <div class="fg-col wide">
+      <h4>Contact Us</h4>
+      <div class="fg-contact"><span>📍</span><span>14 Academy Avenue, Abia Phase 1,<br>Abia State, Nigeria</span></div>
+      <div class="fg-contact"><span>📞</span><span>+234 801 234 5678<br>+234 802 987 6543</span></div>
+      <div class="fg-contact"><span>✉️</span><span>info@topnotchersacademy.edu.ng</span></div>
+      <div class="fg-contact"><span>🕐</span><span>Mon–Fri: 7:30am – 4:00pm</span></div>
+    </div>
+  </div>
+  <div class="footer-bar">
+    <p>© 2024 Topnotchers International Academy. All rights reserved.</p>
+    <p>Abia, Abia, Nigeria · Raising Excellent Leaders ✝</p>
+  </div>
+</footer>
+
+<!-- ========= PAGE PANELS ========= -->
+
+<!-- ABOUT -->
+<div class="page-panel" id="pg-about">
+  <div class="pp-topbar"><button onclick="closePage('pg-about')">← Back to Home</button><span>About Us</span></div>
+  <div class="pp-body">
+    <div class="pp-hero navy-bg"><p class="eyebrow light">Est. 2010 · Abia, Nigeria</p><h1>About Topnotchers<br>International Academy</h1><p>Our story, mission, and the people who make us extraordinary</p></div>
+    <div class="pp-sec">
+      <div class="two-col">
+        <div><p class="eyebrow">Our Story</p><h2>A Vision Born<br>from Faith</h2><p class="body-text mt">Founded in 2010 by a group of passionate Christian educators, Topnotchers began with just 45 students in a modest Abia facility. We dared to believe Nigerian children deserved world-class education rooted in strong Christian values.</p><p class="body-text mt">Today we serve 500+ students from nursery to secondary school, with 40+ qualified teachers, modern facilities, and a track record of outstanding results that speaks powerfully for itself.</p></div>
+        <div class="img-ph tall-ph" style="border-radius:20px;overflow:hidden;padding:0;"><img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=800&q=80&fit=crop" alt="School Campus" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;"/></div>
+      </div>
+    </div>
+    <div class="pp-sec crimson-bg">
+      <div class="mv-grid">
+        <div class="mv-dark"><span class="mv-ico">🎯</span><h3>Our Mission</h3><p>To provide a Christ-centred, academically excellent education that develops the whole child — intellectually, spiritually, socially and physically — preparing them for meaningful impact in the world.</p></div>
+        <div class="mv-gold"><span class="mv-ico">👁️</span><h3>Our Vision</h3><p>To be Nigeria's most trusted private school — producing leaders of character, academic achievers, and global citizens who carry the light of Christ into every sphere of society.</p></div>
+      </div>
+    </div>
+    <div class="pp-sec">
+      <div class="sec-head centered"><p class="eyebrow">What We Stand For</p><h2 class="sec-title">Our Core Values</h2></div>
+      <div class="carousel-outer" id="co-vals">
+        <button class="c-prev csbtn" data-carousel="co-vals">&#8249;</button>
+        <div class="carousel-window"><div class="carousel-belt">
+          <div class="val-card"><span class="vc-ico">✝️</span><h3>Faith</h3><p>We believe in God and integrate Christian values into every aspect of school life, from morning devotion to afternoon dismissal.</p></div>
+          <div class="val-card"><span class="vc-ico">⭐</span><h3>Excellence</h3><p>We set and pursue the highest standards in academics, character, and service to God and to humanity.</p></div>
+          <div class="val-card"><span class="vc-ico">🤝</span><h3>Integrity</h3><p>We teach honesty, transparency, and moral courage as non-negotiables in every student we have the honour to raise.</p></div>
+          <div class="val-card"><span class="vc-ico">🌱</span><h3>Growth</h3><p>Every child is seen as a seed with unique potential — we cultivate it with intentional, personalised, loving care.</p></div>
+          <div class="val-card"><span class="vc-ico">🌍</span><h3>Service</h3><p>We raise children who lead by serving — caring for their families, community, Nigeria, and the world.</p></div>
+        </div></div>
+        <button class="c-next csbtn" data-carousel="co-vals">&#8250;</button>
+      </div>
+      <div class="carousel-dots-row" id="cdr-co-vals"></div>
+    </div>
+    <div class="pp-sec cream-bg">
+      <div class="sec-head centered"><p class="eyebrow">Our Leadership</p><h2 class="sec-title">Meet the Team</h2></div>
+      <div class="leaders-grid">
+        <div class="lcard"><div class="lcard-av">PC</div><h3>Prof. Chukwuemeka Nwosu</h3><p class="lcard-role">Founder &amp; Proprietor</p><p>PhD Education, University of Abia. 25+ years in education leadership and school administration.</p></div>
+        <div class="lcard"><div class="lcard-av">MA</div><h3>Mrs. Margaret Adeyemi</h3><p class="lcard-role">Principal</p><p>PGDE, University of Ibadan. Former WAEC examiner with 18 years of outstanding teaching experience.</p></div>
+        <div class="lcard"><div class="lcard-av">DO</div><h3>Mr. David Okafor</h3><p class="lcard-role">VP Academics</p><p>M.Sc Education Management. Cambridge-trained curriculum specialist with a passion for student outcomes.</p></div>
+        <div class="lcard"><div class="lcard-av">RI</div><h3>Mrs. Ruth Ibe</h3><p class="lcard-role">Head, Early Years</p><p>Montessori-certified with 12 years in early childhood education and child development expertise.</p></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ACADEMICS -->
+<div class="page-panel" id="pg-academics">
+  <div class="pp-topbar"><button onclick="closePage('pg-academics')">← Back to Home</button><span>Academics</span></div>
+  <div class="pp-body">
+    <div class="pp-hero crimson-bg"><p class="eyebrow light">Nigerian · Cambridge · Montessori</p><h1>Academic Programmes</h1><p>Structured, inspiring education from age 1 through 17</p></div>
+    <div class="pp-sec">
+      <p class="academics-intro">At Topnotchers, our academic structure is deliberately designed to meet children at each stage of development. We follow the Nigerian national curriculum while integrating Cambridge International standards, preparing students for both local and international examinations.</p>
+      <div class="pdc">
+        <div class="pdc-ico" style="background:#fff5cc;border-radius:20px;">🌱</div>
+        <div class="pdc-text"><div class="pdc-badge">Ages 1–5 · Nursery &amp; Kindergarten</div><h2>Early Years (Montessori)</h2><p>Our early years programme is built on the Montessori philosophy of child-led exploration. Children develop independence, concentration, language and early numeracy through hands-on activities in a carefully prepared environment.</p><div class="pdc-tags"><span>Language Arts</span><span>Numeracy</span><span>Creative Arts</span><span>Physical Dev.</span><span>Social Studies</span><span>Bible Stories</span></div></div>
+      </div>
+      <div class="pdc reverse">
+        <div class="pdc-ico" style="background:#fee2e2;border-radius:20px;">📖</div>
+        <div class="pdc-text"><div class="pdc-badge">Ages 6–11 · Primary 1–6</div><h2>Primary School</h2><p>Our primary school offers a rich, balanced curriculum with specialist subject teachers from Primary 3. We incorporate technology into learning and place strong emphasis on literacy, numeracy and STEM education — preparing pupils for the demands of secondary school.</p><div class="pdc-tags"><span>English</span><span>Mathematics</span><span>Basic Science</span><span>Social Studies</span><span>French</span><span>Computer Studies</span><span>Creative Arts</span><span>CRS</span></div></div>
+      </div>
+      <div class="pdc">
+        <div class="pdc-ico" style="background:#e8f4fd;border-radius:20px;">🎓</div>
+        <div class="pdc-text"><div class="pdc-badge">Ages 12–17 · JSS1–SSS3</div><h2>Secondary School</h2><p>Our secondary school combines Nigerian Junior and Senior Secondary School curricula with Cambridge IGCSE options. Students are rigorously prepared for WAEC, NECO, and university entrance examinations, with strong career guidance starting from JSS1.</p><div class="pdc-tags"><span>English &amp; Lit.</span><span>Mathematics</span><span>Physics</span><span>Chemistry</span><span>Biology</span><span>Economics</span><span>Government</span><span>Further Maths</span></div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ADMISSIONS -->
+<div class="page-panel" id="pg-admissions">
+  <div class="pp-topbar"><button onclick="closePage('pg-admissions')">← Back to Home</button><span>Admissions</span></div>
+  <div class="pp-body">
+    <div class="pp-hero navy-bg"><p class="eyebrow light">2024/2025 Session Now Open</p><h1>Admissions</h1><p>Secure your child's place at Topnotchers International Academy</p></div>
+    <div class="pp-sec">
+      <div class="sec-head centered"><p class="eyebrow">Simple &amp; Clear</p><h2 class="sec-title">How to Apply — 5 Easy Steps</h2></div>
+      <div class="steps-row">
+        <div class="step"><div class="step-n">01</div><h3>Enquire Online</h3><p>Complete the form below or call us directly. Our team responds within 24 hours — guaranteed.</p></div>
+        <div class="step"><div class="step-n">02</div><h3>Campus Visit</h3><p>Schedule a guided tour of our campus. Meet our teachers and experience the learning environment.</p></div>
+        <div class="step"><div class="step-n">03</div><h3>Entrance Assessment</h3><p>All applicants (except nursery) sit a brief age-appropriate assessment in English and Mathematics.</p></div>
+        <div class="step"><div class="step-n">04</div><h3>Offer &amp; Enrolment</h3><p>Successful applicants receive an offer letter. Complete enrolment form and pay the acceptance deposit.</p></div>
+        <div class="step"><div class="step-n">05</div><h3>Welcome! ✝</h3><p>Attend new student orientation and join our vibrant, thriving school community with open arms.</p></div>
+      </div>
+    </div>
+    <div class="pp-sec cream-bg">
+      <div class="sec-head centered"><p class="eyebrow">Get Started Today</p><h2 class="sec-title">Admission Enquiry Form</h2></div>
+      <form class="adm-form" onsubmit="submitForm(event)">
+        <div class="form-row2"><div class="fg"><label>Parent/Guardian Full Name *</label><input type="text" placeholder="e.g. Mrs. Adaeze Okonkwo" required/></div><div class="fg"><label>Phone Number *</label><input type="tel" placeholder="+234 801 234 5678" required/></div></div>
+        <div class="form-row2"><div class="fg"><label>Email Address *</label><input type="email" placeholder="you@example.com" required/></div><div class="fg"><label>Child's Full Name *</label><input type="text" placeholder="Child's full name" required/></div></div>
+        <div class="form-row2"><div class="fg"><label>Child's Date of Birth *</label><input type="date" required/></div><div class="fg"><label>Programme Applying For *</label><select required><option value="">Select Programme</option><option>Early Years (Nursery/KG)</option><option>Primary School (Pry 1–6)</option><option>Junior Secondary (JSS 1–3)</option><option>Senior Secondary (SSS 1–3)</option></select></div></div>
+        <div class="fg"><label>How did you hear about us?</label><select><option>Social Media (Facebook/Instagram)</option><option>Word of Mouth / Referral</option><option>Google Search</option><option>Flyer / Signboard</option><option>Other</option></select></div>
+        <div class="fg"><label>Additional Notes or Questions</label><textarea placeholder="Any questions or special requirements for your child?"></textarea></div>
+        <button type="submit" class="btn-crimson full-w">Submit Enquiry — We'll Reply Within 24 Hours ✝</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- FACILITIES -->
+<div class="page-panel" id="pg-facilities">
+  <div class="pp-topbar"><button onclick="closePage('pg-facilities')">← Back to Home</button><span>Facilities</span></div>
+  <div class="pp-body">
+    <div class="pp-hero crimson-bg"><p class="eyebrow light">World-Class Infrastructure</p><h1>Our Facilities</h1><p>State-of-the-art spaces built for inspired, joyful learning</p></div>
+    <div class="pp-sec">
+      <div class="carousel-outer" id="co-fac">
+        <button class="c-prev csbtn" data-carousel="co-fac">&#8249;</button>
+        <div class="carousel-window"><div class="carousel-belt">
+          <div class="fac-card"><img src="https://images.unsplash.com/photo-1571260899304-425eee4c7efc?w=700&q=80&fit=crop" alt="ICT Laboratory" class="fac-img" loading="lazy"/><div class="fac-info"><h3>ICT Laboratory</h3><p>60-seat computer lab with high-speed internet, 3D printers, and robotics kits for comprehensive STEM education and digital literacy.</p></div></div>
+          <div class="fac-card"><img src="https://images.unsplash.com/photo-1532094349884-543559373537?w=700&q=80&fit=crop" alt="Science Laboratory" class="fac-img" loading="lazy"/><div class="fac-info"><h3>Science Laboratories</h3><p>Dedicated Physics, Chemistry, and Biology labs with modern equipment for safe, engaging, hands-on experiments and STEM discovery.</p></div></div>
+          <div class="fac-card"><img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=700&q=80&fit=crop" alt="Library and Resource Centre" class="fac-img" loading="lazy"/><div class="fac-info"><h3>Library &amp; Resource Centre</h3><p>Over 5,000 titles including digital resources, quiet study booths, and a dedicated primary reading corner for all ages.</p></div></div>
+          <div class="fac-card"><img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=700&q=80&fit=crop" alt="Sports Complex" class="fac-img" loading="lazy"/><div class="fac-info"><h3>Sports Complex</h3><p>Full-size football pitch, basketball courts, athletics track, and an indoor gymnasium for physical excellence and team spirit.</p></div></div>
+          <div class="fac-card"><img src="https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?w=700&q=80&fit=crop" alt="Music and Arts Studio" class="fac-img" loading="lazy"/><div class="fac-info"><h3>Music &amp; Arts Studio</h3><p>Professional-grade music studio, art rooms, and a drama stage for full creative expression and talent development in every child.</p></div></div>
+          <div class="fac-card"><img src="https://images.unsplash.com/photo-1567521464027-f127ff144326?w=700&q=80&fit=crop" alt="School Cafeteria" class="fac-img" loading="lazy"/><div class="fac-info"><h3>School Cafeteria</h3><p>Hygienic, nutritionist-approved meals served daily in a spacious, air-conditioned dining hall with dedicated age-group seating areas.</p></div></div>
+        </div></div>
+        <button class="c-next csbtn" data-carousel="co-fac">&#8250;</button>
+      </div>
+      <div class="carousel-dots-row" id="cdr-co-fac"></div>
+    </div>
+  </div>
+</div>
+
+<!-- CONTACT -->
+<div class="page-panel" id="pg-contact">
+  <div class="pp-topbar"><button onclick="closePage('pg-contact')">← Back to Home</button><span>Contact Us</span></div>
+  <div class="pp-body">
+    <div class="pp-hero navy-bg"><p class="eyebrow light">We'd Love to Hear from You</p><h1>Contact Us</h1><p>Our team is available Monday–Friday to answer all your questions</p></div>
+    <div class="pp-sec">
+      <div class="contact-grid">
+        <div class="ct-info">
+          <h2>Get in Touch</h2>
+          <p class="body-text mt">Our admissions and administrative team is available to answer your questions and help schedule campus visits any weekday.</p>
+          <div class="cti"><span class="cti-ico">📍</span><div><strong>School Address</strong><br>14 Academy Avenue, Abia Phase 1,<br>Abia State, Nigeria</div></div>
+          <div class="cti"><span class="cti-ico">📞</span><div><strong>Phone Numbers</strong><br>+234 801 234 5678 / +234 802 987 6543</div></div>
+          <div class="cti"><span class="cti-ico">✉️</span><div><strong>Email</strong><br>info@topnotchersacademy.edu.ng</div></div>
+          <div class="cti"><span class="cti-ico">🕐</span><div><strong>Office Hours</strong><br>Mon–Fri: 7:30am – 4:00pm<br>Saturday: 9:00am – 12:00pm (visits only)</div></div>
+          <div class="map-embed">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.721278!2d3.4699!3d6.4281!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf53aec4dd92d%3A0x9f5a8e0b9a0d5a7a!2sAbia%20Phase%201%2C%20Abia!5e0!3m2!1sen!2sng!4v1699000000000!5m2!1sen!2sng"
+              width="100%" height="100%" style="border:0;border-radius:14px;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade" title="Topnotchers International Academy Location">
+            </iframe>
+          </div>
+        </div>
+        <div class="ct-form">
+          <h2>Send a Message</h2>
+          <form onsubmit="submitForm(event)">
+            <div class="fg"><label>Full Name *</label><input type="text" placeholder="Your full name" required/></div>
+            <div class="fg"><label>Email Address *</label><input type="email" placeholder="you@example.com" required/></div>
+            <div class="fg"><label>Phone Number</label><input type="tel" placeholder="+234 ..."/></div>
+            <div class="fg"><label>Subject *</label><select required><option>General Enquiry</option><option>Admissions</option><option>School Tour</option><option>Academic Information</option><option>Fees &amp; Bursary</option></select></div>
+            <div class="fg"><label>Message *</label><textarea placeholder="How can we help you?" required></textarea></div>
+            <button type="submit" class="btn-crimson full-w">Send Message →</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ========= FLOATERS ========= -->
+<a href="https://wa.me/2348012345678?text=Hello%2C+I+am+interested+in+Topnotchers+International+Academy" class="wa-float" target="_blank" title="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.555 4.116 1.529 5.847L0 24l6.341-1.503A11.95 11.95 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.6a9.575 9.575 0 01-4.9-1.345l-.35-.208-3.764.892.953-3.672-.228-.375A9.573 9.573 0 012.4 12C2.4 6.698 6.698 2.4 12 2.4S21.6 6.698 21.6 12 17.302 21.6 12 21.6z"/></svg>
+</a>
+
+<div class="sticky-mobile">
+  <a href="#" onclick="openPage('pg-admissions');return false;">✝ Apply for Admission — 2024/2025 Now Open</a>
+</div>
+
+<div class="toast" id="toast">✅ Thank you! Our admissions team will contact you within 24 hours. God bless you! ✝</div>
+
+<script src="script.js"></script>
+</body>
+</html>
